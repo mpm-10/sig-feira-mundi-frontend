@@ -1,0 +1,24 @@
+{
+  "extends": "expo/tsconfig.base",
+  "lib": ["ES6", "DOM"],
+  "noImplicitAny": true,
+  "noImplicitThis": true,
+  "strictNullChecks": true,
+  "allowSyntheticDefaultImports": true,
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [ "./*" ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
